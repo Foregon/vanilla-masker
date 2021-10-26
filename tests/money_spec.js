@@ -36,6 +36,10 @@ describe("VanillaMasker.toMoney", function() {
     expect(VMasker.toMoney('1a0b0c000')).toEqual('1.000,00');
   });
 
+  it('returns empty money when number is empty', function() {
+    expect(VMasker.toMoney('')).toEqual('');
+  });
+
   it('returns 0,00 money when number is 0', function() {
     expect(VMasker.toMoney(0)).toEqual('0,00');
   });
