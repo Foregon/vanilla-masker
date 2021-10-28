@@ -36,10 +36,6 @@ describe("VanillaMasker.toMoney", function() {
     expect(VMasker.toMoney('1a0b0c000')).toEqual('1.000,00');
   });
 
-  it('returns empty money when number is empty', function() {
-    expect(VMasker.toMoney('')).toEqual('');
-  });
-
   it('returns 0,00 money when number is 0', function() {
     expect(VMasker.toMoney(0)).toEqual('0,00');
   });
@@ -98,22 +94,6 @@ describe("VanillaMasker.toMoney", function() {
 
   it('returns 3,75 when showSignal is false and given a string value', function() {
     expect(VMasker.toMoney('-375', {showSignal: false})).toEqual('3,75');
-  });
-
-  it('returns 0,012 when value is 12 and precision is 3', function() {
-    expect(VMasker.toMoney('12', {precision: 3})).toEqual('0,012');
-  });
-
-  it('returns 0,0123 when value is 123 and precision is 4', function() {
-    expect(VMasker.toMoney('123', {precision: 4})).toEqual('0,0123');
-  });
-
-  it('returns 0,00123 when value is 123 and precision is 5', function() {
-    expect(VMasker.toMoney('123', {precision: 5})).toEqual('0,00123');
-  });
-
-  it('parses proper precision location from strings', function() {
-    expect(VMasker.toMoney('1,2', {precision: 2})).toEqual('1,20');
   });
 
 });
