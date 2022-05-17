@@ -30,11 +30,6 @@ For npm users you just run this command: `npm install vanilla-masker --save`
 ### Bower
 You can install it via bower too, using this command: `bower install --save vanilla-masker`
 
-### Meteor
-And you can install inside your meteor projects with this command: `meteor add bankfacil:vanilla-masker`
-
-# How to use
-
 ### Loading the lib
 
 Like I said, you need to download and put this lib in your own site, using this tag below:

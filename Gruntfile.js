@@ -1,7 +1,6 @@
 module.exports = function(grunt) {
 
   var config = {
-
     // Clean folders ================================
     clean: {
       dev: ['public/vanilla-masker*'],
